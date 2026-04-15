@@ -7,15 +7,70 @@
 </head>
 <body>
 
-<section class="hero">
-  <h1>这些，是我们走过的痕迹。</h1>
-  <a href="#memories">往下看</a>
-</section>
+<!-- TIMELINE 首页 -->
+<div id="home" class="container">
 
-<section id="memories" class="memories">
-  <img src="images/1.jpg">
-  <img src="images/2.jpg">
-</section>
+  <h1 class="title">我们的回忆</h1>
+  <p class="subtitle">每一段，都还记得</p>
+
+  <div class="card">
+    <h2>2023.05</h2>
+    <p>第一次见面</p>
+    <button onclick="openPage('p1')">进入</button>
+  </div>
+
+  <div class="card">
+    <h2>2023.07</h2>
+    <p>第一次一起出去</p>
+    <button onclick="openPage('p2')">进入</button>
+  </div>
+
+</div>
+
+<!-- PAGE 1 -->
+<div id="p1" class="page">
+
+  <button class="back" onclick="goHome()">← 返回</button>
+
+  <h2>第一次见面</h2>
+
+  <video controls>
+    <source src="video/video1.mp4" type="video/mp4">
+  </video>
+
+  <p class="desc">
+    那一天其实我有点紧张，但你笑得很好看。
+  </p>
+
+  <div class="gallery">
+    <img src="images/1.jpg">
+    <img src="images/2.jpg">
+    <img src="images/3.jpg">
+  </div>
+
+</div>
+
+<!-- PAGE 2 -->
+<div id="p2" class="page">
+
+  <button class="back" onclick="goHome()">← 返回</button>
+
+  <h2>第一次一起出去</h2>
+
+  <video controls>
+    <source src="video/video2.mp4" type="video/mp4">
+  </video>
+
+  <p class="desc">
+    那天其实很普通，但我现在觉得很珍贵。
+  </p>
+
+  <div class="gallery">
+    <img src="images/4.jpg">
+    <img src="images/5.jpg">
+  </div>
+
+</div>
 
 <script src="script.js"></script>
 </body>
